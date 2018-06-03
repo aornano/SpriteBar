@@ -1,7 +1,16 @@
-SpriteBar - Draw your own progress bar in Sprite Kit.
+SpriteBar Swift version - Draw your own progress bar in Sprite Kit.
 =========
 
 This library is a convenient way to create your own SKSpriteNode progress bars in Apple's Sprite Kit. Simply pass in a Texture Atlas containing your sprites and SpriteBar will do the rest.
+
+[![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
+)](https://developer.apple.com/swift)
+[![Build Status](https://travis-ci.org/Alamofire/Alamofire.svg?branch=master)](https://travis-ci.org/Alamofire/Alamofire)
+[![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
+)](https://developer.apple.com/iphone/index.action)
+[![License](https://img.shields.io/cocoapods/l/BadgeSwift.svg?style=flat)](/LICENSE)
+
+![demo](demo.gif) 
 
 ## Features
 
@@ -25,22 +34,28 @@ etc
 
 ## Usage
 
-```objc
+```swift
 // Init and add
-SpriteBar *progressBar = [[SpriteBar alloc] initWithTextureAtlas:myCustomTextureAtlas];
-progressBar.size = CGSizeMake(50, 50);
-[self addChild:progressBar];
+let progressBar = SpriteBar(textureAtlas:myCustomTextureAtlas)
+progressBar.size = CGSize(width:300, height: 50);
+addChild(progressBar)
 
-[progressBar setProgress:0.2];
+progressBar.setProgress(0.2)
 // or
-[progressBar setProgressWithValue:36 ofTotal:200];
+progressBar.setProgressWithValue(36, ofTotal:200)
 // or
-[progressBar startBarProgressWithTimer:10 target:self selector:@selector(timeOver)];
+progressBar.startBarProgressWithTimer(10, target:self, selector: #selector(self.timeOver))
+
+// the function timeOver could be:
+@objc func timeOver() {
+   print("time is over")
+}
 ```
 
 ## Credits & Contact
 SpriteBar was created by [Henry Everett](http://www.henryeverett.info/)  
 Twitter: [@henryeverett](https://www.twitter.com/henryeverett)  
-GitHub: [henryeverett](https://github.com/henryeverett)  
+GitHub: [henryeverett](https://github.com/henryeverett)
+It was converted to Swift 4 by [Alessandro Ornano](http://www.alessandroornano.com)
+GitHub: [aornano](https://github.com/aornano/)
 
-**Please fork and contribute to this project!**
