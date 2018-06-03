@@ -56,6 +56,6 @@ progressBar.startBarProgressWithTimer(10, target:self, selector: #selector(self.
 SpriteBar was created by [Henry Everett](http://www.henryeverett.info/)  
 Twitter: [@henryeverett](https://www.twitter.com/henryeverett)  
 GitHub: [henryeverett](https://github.com/henryeverett)
-It was converted to Swift 4 by [Alessandro Ornano](http://www.alessandroornano.com)
+It was converted to Swift 4 by [Alessandro Ornano](http://www.alessandroornano.com/)
 GitHub: [aornano](https://github.com/aornano/)
 
