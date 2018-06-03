@@ -3,6 +3,15 @@ SpriteBar Swift version - Draw your own progress bar in Sprite Kit.
 
 This library is a convenient way to create your own SKSpriteNode progress bars in Apple's Sprite Kit. Simply pass in a Texture Atlas containing your sprites and SpriteBar will do the rest.
 
+[![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
+)](https://developer.apple.com/swift)
+[![Build Status](https://travis-ci.org/Alamofire/Alamofire.svg?branch=master)](https://travis-ci.org/Alamofire/Alamofire)
+[![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
+)](https://developer.apple.com/iphone/index.action)
+[![License](https://img.shields.io/cocoapods/l/BadgeSwift.svg?style=flat)](/LICENSE)
+
+![demo](demo.gif) 
+
 ## Features
 
 - Progress bar generation from SKTextureAtlas.
